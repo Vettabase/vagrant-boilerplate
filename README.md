@@ -2,6 +2,9 @@
 
 This is a boilerplate for a standard Vettabase Vagrantfiles.
 
+A Vagrantfile created starting from this boilerplate is supposed to support
+many configuration variables to produce customised Vagrant boxes.
+
 
 ## Configuration
 
