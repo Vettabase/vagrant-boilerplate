@@ -1,4 +1,4 @@
-# vagrant-questdb
+# vagrant-boiletplate
 
 This is a boilerplate for a standard Vettabase Vagrantfile.
 
