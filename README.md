@@ -1,6 +1,6 @@
 # vagrant-boiletplate
 
-This is a boilerplate for a standard Vettabase Vagrantfile.
+This is a boilerplate for a standard Vettabase Vagrantfiles.
 
 
 ## Configuration
