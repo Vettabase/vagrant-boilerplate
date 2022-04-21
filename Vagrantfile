@@ -69,6 +69,7 @@ Vagrant.configure('2') do |config|
     if PROVIDER.downcase == 'virtualbox'
         config.vm.provider 'virtualbox' do |vb|
             vb.gui = false
+            vb.customize ["modifyvm", :id, '--audio',       'none']
             vb.customize ['modifyvm', :id, '--clipboard',   'bidirectional']
             vb.customize ['modifyvm', :id, '--name',        VM_NAME]
             vb.customize ['modifyvm', :id, '--description', VM_DESC]
