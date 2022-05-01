@@ -94,11 +94,13 @@ Vagrant.configure('2') do |config|
     # as an uppercase id in snake case
     info_file = File.new('generated/FEATURES', 'w')
 
-    config.vm.provision :shell,
-        path: 'bootstrap.sh',
-        env: {
-            'SYS_SWAPPINESS' => SYS_SWAPPINESS
-        }
+    if File.file?('bootstrap.sh')
+        config.vm.provision :shell,
+            path: 'bootstrap.sh',
+            env: {
+                'SYS_SWAPPINESS' => SYS_SWAPPINESS
+            }
+    end
 
     # end of the FEATURES file
     info_file.close
